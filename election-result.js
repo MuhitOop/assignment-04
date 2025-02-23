@@ -7,9 +7,9 @@ function electionResult(votes) {
   let bananaCount = 0;
 
   for (const vote of votes) {
-    if (vote.toLowerCase() === "mango") {
+    if (vote === "mango") {
       mangoCount++;
-    } else if (vote.toLowerCase() === "banana") {
+    } else if (vote === "banana") {
       bananaCount++;
     }
   }
@@ -22,3 +22,7 @@ function electionResult(votes) {
     return "Draw";
   }
 }
+
+const winnerIs = electionResult(["mango", "BananA", "na vote", "na vote"]);
+
+console.log(winnerIs);
