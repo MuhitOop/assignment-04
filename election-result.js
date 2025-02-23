@@ -22,7 +22,3 @@ function electionResult(votes) {
     return "Draw";
   }
 }
-
-const winnerIs = electionResult(["mango", "BananA", "na vote", "na vote"]);
-
-console.log(winnerIs);
